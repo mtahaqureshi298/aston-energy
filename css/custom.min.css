@@ -208,8 +208,8 @@ html.lenis body {
 
 .themeBtn:hover {
 	color: var(--white);
-	border-color: var(--secondary);
-	background: var(--secondary);
+	border-color: var(--gray);
+	background: var(--gray);
 }
 
 /* HEADINGS */
@@ -1068,3 +1068,116 @@ html.lenis body {
 }
 
 /* Pagetitle End */
+
+/* About Us Page Start */
+.about--page {
+	background: none;
+	padding: 5rem 0;
+}
+
+.about--page::before {
+	display: none;
+}
+
+.about-img {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+.about-img>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.about-img__box {
+	background: var(--primary);
+	position: absolute;
+	top: 5rem;
+	left: -5rem;
+	border-radius: 0.5rem;
+	padding: 1rem 2rem;
+}
+
+.about-img__box figure {
+	width: 100px;
+	filter: brightness(0) invert(1);
+	margin-bottom: 1rem;
+}
+
+.about-img__box .number {
+	font-size: 2.25rem;
+	font-weight: 600;
+	color: var(--white);
+	margin: 0;
+}
+
+.about-img__box .title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.vision {
+	background: var(--secondary);
+}
+
+.vision-head {
+	margin-bottom: 3rem;
+}
+
+.vision-head :is(.heading, p) {
+	color: var(--white);
+}
+
+.vision-card {
+	height: 100%;
+	background: var(--white);
+	border-radius: 0.5rem;
+	padding: 3rem;
+}
+
+.vision-card__icon {
+	width: 60px;
+	filter: brightness(0) saturate(100%) invert(40%) sepia(97%) saturate(394%) hue-rotate(89deg) brightness(98%) contrast(90%);
+	margin: 0 auto 2rem;
+}
+
+.vision-card__icon img {
+	width: 100%;
+}
+
+.vision-card .title {
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.vision-card p {
+	color: var(--black);
+	margin: 0;
+}
+
+.vision-card p+p {
+	margin-top: 1rem;
+}
+
+/* About Us Page End */
+
+/* Text Document Start */
+.textDocument ul {
+	margin-left: 1.25rem;
+}
+
+.textDocument ul li {
+	list-style: disc;
+}
+
+.textDocument .heading~.heading {
+	margin-top: 1rem;
+}
+
+/* Text Document End */
