@@ -1522,3 +1522,76 @@ html.lenis body {
 }
 
 /* Blog End */
+
+/* Downloads Start */
+.downloads-card {}
+
+.downloads-card__img {
+	width: 100%;
+	height: 370px;
+	overflow: hidden;
+}
+
+.downloads-card__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 300ms ease-in-out;
+}
+
+.downloads-card__content {
+	text-align: center;
+	padding: 1rem;
+}
+
+.downloads-card__content .title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+.downloads-card__content .link-btn {
+	font-family: var(--rajdhani-font);
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--secondary);
+	display: block;
+}
+
+.downloads-card:hover .downloads-card__img img {
+	transform: scale(1.1);
+}
+
+.downloads-card__content .link-btn:hover {
+	color: var(--primary);
+}
+
+/* Downloads End */
+
+/* Customer Start */
+.customer {
+	background: url(../images/customer-bg.jpg) fixed no-repeat center center/cover;
+}
+
+.customer-card {
+	border: 1px solid var(--black);
+	padding: 1rem;
+}
+
+.customer-card .title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--primary);
+	margin-bottom: 0.5rem;
+}
+
+.customer-card p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.customer-card .link-btn {
+	color: var(--secondary);
+}
+
+/* Customer End */
